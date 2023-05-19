@@ -2,18 +2,27 @@ lockfileVersion: 5.3
 
 importers:
 
-  package1:
+  packages/my-func-pkg:
     specifiers:
       typescript: 4.9.5
     devDependencies:
       typescript: 4.9.5
 
-  package2:
+  packages/with-refs:
     specifiers:
-      package1: workspace:*
+      my-func-pkg: workspace:*
       typescript: 4.9.5
     dependencies:
-      package1: link:../package1
+      my-func-pkg: link:../my-func-pkg
+    devDependencies:
+      typescript: 4.9.5
+
+  packages/without-refs:
+    specifiers:
+      my-func-pkg: workspace:*
+      typescript: 4.9.5
+    dependencies:
+      my-func-pkg: link:../my-func-pkg
     devDependencies:
       typescript: 4.9.5
 

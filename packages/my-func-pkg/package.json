@@ -1,8 +1,8 @@
 {
-  "name": "package2",
+  "name": "my-func-pkg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "npm run clean && npm run compile",
     "compile": "tsc --build",
@@ -15,8 +15,5 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "4.9.5"
-  },
-  "dependencies": {
-    "package1": "workspace:*"
   }
 }

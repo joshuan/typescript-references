@@ -1,8 +1,8 @@
 {
-  "name": "package1",
+  "name": "without-refs",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run compile",
     "compile": "tsc --build",
@@ -15,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "my-func-pkg": "workspace:*"
   }
 }
