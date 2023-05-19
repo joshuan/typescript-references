@@ -1,0 +1,26 @@
+lockfileVersion: 5.3
+
+importers:
+
+  package1:
+    specifiers:
+      typescript: 4.9.5
+    devDependencies:
+      typescript: 4.9.5
+
+  package2:
+    specifiers:
+      package1: workspace:*
+      typescript: 4.9.5
+    dependencies:
+      package1: link:../package1
+    devDependencies:
+      typescript: 4.9.5
+
+packages:
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==, tarball: https://npm.yandex-team.ru/typescript/-/typescript-4.9.5.tgz?rbtorrent=3089b73a2bed75ac3577ad6726c06281b3a9f5a9}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true

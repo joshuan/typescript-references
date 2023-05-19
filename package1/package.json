@@ -4,9 +4,10 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "build": "tsc --build",
+    "build": "npm run clean && npm run compile",
+    "compile": "tsc --build",
     "dev": "tsc --build --watch",
-    "clean": "rm -rf build",
+    "clean": "rm -rf build tsconfig.tsbuildinfo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
